@@ -1,0 +1,85 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+    <a class="btn btn-danger" href="{{ url_for('index') }}">Voltar para página inicial</a>
+
+    {% for nome_arquivo, dados_arquivo in lista_dados.items() %}
+
+        <h1>{{ nome_arquivo }}</h1>
+        <div class="row-fluid">    
+            <h2>Capa Processo</h2>        
+            <table class="table table-striped table-responsive table-bordered">
+                       
+                <tbody>
+                    {% for descricao, dado_capa_processo in dados_arquivo[0].items() %}
+                    <tr>
+                        <th>{{ descricao }}</th>
+                    </tr>
+                    <tr>
+                        <td>{{ dado_capa_processo }}</td>
+                    </tr>
+              
+                    {% endfor %}
+                    {% for descricao, dado_processo_relacionado in dados_arquivo[1].items() %}
+                        {% if loop.index == 1 %}
+                            <tr>
+                                <th>{{ descricao }}</th>
+                            </tr>
+                        {% endif %} 
+                        {% for item_processo in dado_processo_relacionado %}
+                        <tr>
+                                <td>{{ item_processo }}</td>                            
+                        </tr>
+                        {% endfor %}
+
+                    {% endfor %}                    
+                </tbody>
+            </table>
+              
+            <h2>Partes e Representantes</h2>        
+            <table class="table table-striped table-responsive table-bordered">           
+                <tbody>
+                    {% for descricao, dado_parte_representante in dados_arquivo[2].items() %}
+                    <tr>
+                        <th>{{ descricao }}</th>
+                    </tr>
+                    <tr>
+                        <td>{{ dado_parte_representante }}</td>
+                    </tr>
+              
+                    {% endfor %}
+              
+                </tbody>
+            </table>
+                    
+            <h2>Eventos do processo</h2>
+            <table class="table table-striped table-responsive table-bordered">            
+                <tbody>
+                    {% for evento in dados_arquivo[3] %}
+                    
+                        {% if loop.index == 1 %}
+                            <tr>
+                                {% for key, value in evento.items() %}
+                                    
+                                        <th>{{ key }}</th>                        
+                                    
+                                {% endfor %}
+                            </tr>
+                        {% endif %}  
+                        <tr>
+                            {% for key, value in evento.items() %}
+                                
+                                    <td>{{ value }}</td>
+                                                    
+                            {% endfor %}  
+                        </tr>                  
+                    {% endfor %}            
+                </tbody>
+            </table>
+        </div>      
+        <br>
+        <hr style="height:2px;border-width:0;color:black;background-color:black">
+        <br>
+    {% endfor %}    
+ 
+{% endblock %}

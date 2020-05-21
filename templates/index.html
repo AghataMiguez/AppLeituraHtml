@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+    
+    <form action="{{ url_for('leitura') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+              <label for="pastaArquivo">Informe o caminho da pasta de arquivos html ( colocar '/' no final do nome do arquivo)</label>
+              <input type="text" id="caminho_arquivos" name="caminho_arquivos" class="form-control" value="">
+            </div> 
+        </fieldset>
+        <button type="submit" class="btn btn-primary btn-buscar">Exibir dados em página html</button>
+        <br>
+       
+    </form>
+   
+    
+{% endblock %}
