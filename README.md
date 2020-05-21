@@ -10,4 +10,4 @@ Aplicação em Flask para leitura de dados de html
 
 2) Para executar apenas a leitura do arquivo, descomentar as linhas do arquivo leituraArquivo.py, modificar a variavel path_principal com o caminho da pasta que contém os arquivos e executar o comando abaixo:
 
-`leituraArquivo.py`
+`python3 leituraArquivo.py`
