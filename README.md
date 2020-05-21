@@ -1,7 +1,7 @@
 # AppLeituraHtml
 Aplicação em Flask para leitura de dados de html
 
-# Como executar a aplicação?
+# Como executar a aplicação:
 1) Executar os comandos abaixo dentro da pasta do projeto para ativar a virtualenv e executar o projeto na web
 
 `source myenv/bin/activate`
