@@ -5,7 +5,7 @@ Aplicação em Flask para leitura de dados de html
 
 1) Clonar o projeto para uma pasta de sua preferência
 
-2) Abrir o arquivo *activate* dentro da pasta `myenv/bin/`, procurar a variável *VIRTUAL_ENV=* e edita-la colocando o path da sua máquina
+2) Abrir o arquivo *activate* dentro da pasta `myenv/bin/`, procurar a variável *VIRTUAL_ENV=* e edita-la colocando o path da sua máquina ( a aplicação foi criada no ambiente linux )
 
 3) Após a edição do arquivo activate, executar os comandos abaixo dentro da pasta do projeto para ativar a virtualenv e executar o projeto na web
 
