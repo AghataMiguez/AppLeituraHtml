@@ -1,5 +1,5 @@
 # AppLeituraHtml
-Aplicação em Flask para leitura de dados de html
+Aplicação em Flask para leitura de dados .html
 
 # Como executar a aplicação:
 
@@ -13,6 +13,16 @@ Aplicação em Flask para leitura de dados de html
 
 `python3 principal.py`
 
-3) Para executar apenas a leitura do arquivo, descomentar as linhas do arquivo leituraArquivo.py, modificar a variavel path_principal com o caminho da pasta que contém os arquivos e executar o comando abaixo:
+4) Para executar apenas a leitura do arquivo, descomentar as linhas do arquivo leituraArquivo.py, modificar a variavel path_principal com o caminho da pasta que contém os arquivos e executar o comando abaixo:
 
 `python3 leituraArquivo.py`
+
+# Resultado da Aplicação
+
+![Tela1_Appweb](Tela1_Appweb.png)
+
+![Tela2_Appweb](Tela2_Appweb.png)
+
+![Tela3_Appweb](Tela3_Appweb.png)
+
+![Tela4_Appweb](Tela4_Appweb.png)
